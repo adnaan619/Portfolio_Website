@@ -26,23 +26,22 @@ var swiper = new Swiper(".reviews-content", {
 });
 
 function validate(){
-      let name = document.querySelector(".name");
-      let email = document.querySelector(".email");
-      let msg = document.querySelector(".message");
-      let sendBtn = document.querySelector(".send-btn");
+    let name = document.querySelector(".name");
+    let email = document.querySelector(".email");
+    let msg = document.querySelector(".message");
+    let sendBtn = document.querySelector(".send-btn");
 
-      sendBtn.addEventListener("click", (e) =>{
+    sendBtn.addEventListener("click", (e) =>{
         e.preventDefault();
         if (name.value == "" || email.value == "" || msg.value == ""){
             emptyerror();
         } else{
             sendmail(name.value, email.value, msg.value);
             success;
-        
         }
-      });
-  }
-  validate();
+    });
+}
+validate();
 
 function sendmail(name, email, msg){
     emailjs.send="service_5t4cq0d", "template_ysitonu",({
