@@ -11,11 +11,11 @@
 }
 
 :root{
-  --main-color: #0b229f;
-  --body-color: #557b87;
-  --container-color: #3075dd;
+  --main-color: #4dc3c3;
+  --body-color: #728283;
+  --container-color: #4fc8cc;
   --heading-color: #33382e;
-  --box-color: #b8cada;
+  --box-color: #7ce9e9;
   --bg-color: #fff;
 
 }
@@ -456,6 +456,7 @@ header{
     background: var(--main-color) !important;
 }
 
+/*contact form*/
 .contact-form{
     max-width: 600px;
     margin: auto;
@@ -466,11 +467,11 @@ header{
 .contact-form input,.contact-form textarea{
     border: none;
     outline: none;
-    font-size: 0.9rem;
+    font-size: 0.9rem; 
     padding: 15px;
     color: var(--bg-color);
-    background: var(--bg-color);
-    border-radius: 0.4rem;
+    background: var(--box-color); 
+    border-radius: 0.4rem; 
 }
 .contact-form .send-btn{
     width: 120px;

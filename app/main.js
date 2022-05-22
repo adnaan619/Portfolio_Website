@@ -35,7 +35,7 @@ function validate(){
         e.preventDefault();
         if (name.value == "" || email.value == "" || msg.value == ""){
             emptyerror();
-        } else{
+        } else {
             sendmail(name.value, email.value, msg.value);
             success;
         }
